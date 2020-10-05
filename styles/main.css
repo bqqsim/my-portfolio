@@ -1,7 +1,8 @@
 a {
-  color:red; 
+  color:whitesmoke; 
   font-size: 3ems;
-background-color: royalblue;
+background-color:blue;
+font-family: 'Open Sans', sans-serif;
 }
 figure {
 text-align: center;
@@ -9,10 +10,13 @@ text-align: center;
 }
 body {
 
-    background-color:orange;
+    background-color:rgb(228, 132, 125);
 
 }
-h1{text-align: center;}
+h1{text-align: center;
+color:blue;
+font-size: 60px;
+font-family: 'Inconsolata', monospace;}
 img{
 
     display: block;
@@ -26,8 +30,7 @@ img{
   margin-right: auto;
 
 }
+#fancy-strip {
+background-color: white;
 
-figure figcaption {
-
-  text-align: left; 
 }

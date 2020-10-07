@@ -14,15 +14,16 @@ h1{text-align: center;
 color:blue;
 font-size: 60px;
 font-family: 'Inconsolata', monospace;}
+
+.strip {
+background-color: white;
+}
 .image{
 
-    display: block;
-    margin-left: auto;
-    margin-right: 100px;
+  text-align: center;
 }
 
-
-#fancy-strip {
-background-color: white;
+a:hover {
+color: crimson;
 
 }

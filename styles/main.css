@@ -11,16 +11,22 @@ text-align: center;
 }
 body {
 
-    background-color:rgb(228, 132, 125);
+    background-color:rgb(255, 255, 255);
 
 }
 #home-title{text-align: center;
-color:blue;
+color:rgb(0, 0, 0);
 font-size: 60px;
-font-family: 'Inconsolata', monospace;}
+font-family:'Lato', sans-serif;}
+
+#image{
+margin-top: 30px;
+margin-left: 30px;
+
+}
 
 .strip {
-background-color: white;
+background-color:rgb(228, 132, 125);
 }
 
 a:hover {
@@ -31,6 +37,58 @@ border: solid black;
 
 .links{
 text-align: center;
-
 }
 
+#accomplishments{text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:'Lato', sans-serif;
+}
+#assign{text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:'Lato', sans-serif;
+}
+
+#assignh2{ 
+margin-left: 30px;
+font-size: 30px;
+}
+
+#MOTH { 
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:'Lato', sans-serif;
+}
+
+#WLA {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  font-size: 60px;
+  font-family:'Lato', sans-serif;
+}
+.arrowleft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg); 
+color: rgb(10, 19, 27);}
+ .left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);}
+
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .homepagetxt{
+      width: 500px;
+      height: 150px;
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 15px;
+      padding: 20px;
+      font-size: 25px;
+      display: inline-block;
+  }

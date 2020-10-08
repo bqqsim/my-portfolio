@@ -14,7 +14,7 @@ body {
     background-color:rgb(228, 132, 125);
 
 }
-h1{text-align: center;
+#home-title{text-align: center;
 color:blue;
 font-size: 60px;
 font-family: 'Inconsolata', monospace;}

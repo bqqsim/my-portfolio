@@ -68,48 +68,41 @@ font-size: 30px;
   font-size: 60px;
   font-family:'Lato', sans-serif;
 }
-.arrowleft {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg); 
-color: rgb(10, 19, 27);}
- .left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);}
-
-  .arrow {
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 15px;
-  }
 
   .homepagetxt{
-      width: 500px;
-      height: 150px;
+      width: 800px;
+      height: 250px;
       border: 1px solid rgb(0, 0, 0);
       border-radius: 15px;
       padding: 20px;
-      font-size: 25px;
+      font-size: 40px;
       display: inline-block;
-  }
+      vertical-align: top;
+      margin-top: 20px;
+      margin-left: 60px; }
+/* texts*/
 
-  #assignhome {
-font-size:30px;
+  .heading1 {
+    font-size:40px;
 margin-left: 20px;
   }
-  #assigntxt{
-    margin-left:20px;
+
+.heading2 {
+  font-size:40px;
+  margin-right: 20px;
+  float: right;
+}
+
+.text1{
+  margin-left:20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-  }
-  #accomp{
-    font-size:30px;
-margin-right: 20px;
-float: right;
-  }
-  #acomptxt {
-    margin-left:20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: right;
-  }
+}
+
+.text2{
+  margin-left:20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-align: right;
+  margin-right:20px;
+}

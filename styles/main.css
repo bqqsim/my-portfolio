@@ -92,3 +92,24 @@ color: rgb(10, 19, 27);}
       font-size: 25px;
       display: inline-block;
   }
+
+  #assignhome {
+font-size:30px;
+margin-left: 20px;
+  }
+  #assigntxt{
+    margin-left:20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
+  #accomp{
+    font-size:30px;
+margin-right: 20px;
+float: right;
+  }
+  #acomptxt {
+    margin-left:20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: right;
+  }

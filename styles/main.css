@@ -50,7 +50,7 @@ text-align: center;
   font-family:'Lato', sans-serif;
 }
 
-#assignh2{ 
+.header2{ 
 margin-left: 30px;
 font-size: 30px;
 }
@@ -106,3 +106,17 @@ margin-left: 20px;
   text-align: right;
   margin-right:20px;
 }
+
+#sportstxt{
+  margin-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-right:20px;
+}
+#shooter{
+  margin-left:40px;
+  margin-top: 35px;
+  margin-right:30px;
+  margin-bottom: 30px;
+}
+

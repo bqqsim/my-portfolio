@@ -1,4 +1,4 @@
-a {
+.cool {
   color: rgb(219, 219, 219); 
   font-size: 3ems;
 background-color:rgb(0, 0, 0);
@@ -29,7 +29,7 @@ margin-left: 55px;
 background-color:rgb(228, 132, 125);
 }
 
-a:hover {
+.cool:hover {
 color: rgb(219, 48, 25);
 background-color: rgba(108, 171, 235, 0.575);
 border: solid black; 
@@ -139,4 +139,26 @@ margin-left: 20px;
   margin-top: 15px;
   margin-right:60px;
   margin-bottom: 30px;
+}
+
+#assigntxt{
+  margin-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-right:20px;
+}
+
+#assignhead{
+  margin-left:30px;
+  margin-right:20px;
+  font-size: 30px
+}
+
+li{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif !important;
+}
+
+#folder{
+  margin-right:70px;
 }

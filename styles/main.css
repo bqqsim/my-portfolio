@@ -17,7 +17,7 @@ body {
 #home-title{text-align: center;
 color:rgb(0, 0, 0);
 font-size: 60px;
-font-family:'Lato', sans-serif;}
+font-family: 'Open Sans', sans-serif;}
 
 #image{
 margin-top: 30px;
@@ -26,12 +26,12 @@ margin-left: 55px;
 }
 
 .strip {
-background-color:rgb(228, 132, 125);
+background-color:rgb(67, 202, 236);
 }
 
 .cool:hover {
 color: rgb(219, 48, 25);
-background-color: rgba(108, 171, 235, 0.575);
+background-color: rgb(218, 218, 218);
 border: solid black; 
 }
 
@@ -42,12 +42,12 @@ text-align: center;
 #accomplishments{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family:'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 #assign{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family:'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .header2{ 
@@ -59,14 +59,14 @@ font-size: 35px;
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family:'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #WLA {
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family:'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
   .homepagetxt{
@@ -80,7 +80,7 @@ font-size: 35px;
       vertical-align: top;
       margin-top: 20px;
       margin-left: 60px; }
-/* texts*/
+/* page contents*/
 
   .heading1 {
     font-size:40px;
@@ -161,4 +161,38 @@ li{
 
 #folder{
   margin-right:70px;
+}
+#clock{
+  position: relative; top: -75px;
+  margin-left:15px;
+}
+
+#interests{
+margin-right:75px;
+margin-left:35px;
+position: relative; top: -75px;
+margin-bottom:15px;
+}
+
+#intereststxt{
+  margin-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-right:20px;
+  position: relative; top: -75px;
+
+}
+
+#intereststitle{
+  position: relative; top: -75px;
+  margin-left:30px;
+  margin-right:20px;
+  font-size: 35px
+}
+
+#vibetxt{
+  margin-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-right:20px;
 }

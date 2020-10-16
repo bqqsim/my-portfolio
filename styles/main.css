@@ -1,3 +1,4 @@
+/*the nav bar*/
 .cool {
   color: rgb(219, 219, 219); 
   font-size: 3ems;
@@ -9,94 +10,111 @@ border-radius: 5px;
 padding: 7px;
 text-align: center;
 }
+
+.links{
+  text-align: center;
+  }
+
+.cool:hover {
+  color: rgb(219, 48, 25);
+  background-color: rgb(218, 218, 218);
+  border: solid black; 
+  }
+/*body*/
 body {
 
-    background-color:rgb(255, 255, 255);
+    background-color:#1f2833
 
 }
+/*the heading for the home page and image*/
 #home-title{text-align: center;
 color:rgb(0, 0, 0);
 font-size: 60px;
 font-family: 'Open Sans', sans-serif;}
 
 #image{
-margin-top: 30px;
-margin-left: 55px;
+margin-top: 35px;
+margin-left: 65px;
 
 }
-
+/*strips on the top and bottom of website*/
 .strip {
-background-color:rgb(67, 202, 236);
+background-color:rgb(132, 206, 255);
 }
 
-.cool:hover {
-color: rgb(219, 48, 25);
-background-color: rgb(218, 218, 218);
-border: solid black; 
-}
-
-.links{
-text-align: center;
-}
-
+/*heading for the accomplishments page*/
 #accomplishments{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
 }
+/*heading for the assignments page*/
 #assign{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
 }
-
+/*sub headings for each page*/
 .header2{ 
 margin-left: 30px;
 font-size: 35px;
+color: #C5C6C7;
 }
-
+/*heading for the man of the hour page*/
 #MOTH { 
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
 }
-
+/*heading for the what lies ahead page*/
 #WLA {
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
   font-family: 'Open Sans', sans-serif;
 }
-
+/*bubble for the emoji to speak from*/
   .homepagetxt{
       width: 800px;
       height: 250px;
-      border: 1px solid rgb(0, 0, 0);
+      border: 3px solid rgb(0, 0, 0);
       border-radius: 15px;
       padding: 20px;
       font-size: 40px;
       display: inline-block;
       vertical-align: top;
       margin-top: 20px;
-      margin-left: 60px; }
-/* page contents*/
+      margin-left: 70px; 
+      background: white;    
+      /*
+      position: relative; top: -335px;*/
+    }
+/* index page sub headings*/
 
   .heading1 {
     font-size:40px;
 margin-left: 20px;
-  }
+color: #C5C6C7;
+}
 
 .heading2 {
   font-size:40px;
   margin-right: 20px;
   float: right;
+  color: #C5C6C7;
 }
-
+/*the text on the index*/
 .text1{
   margin-left:20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    border: 3px solid rgb(61, 122, 150);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    background:rgb(40, 64, 141);
+    color:rgb(80, 183, 252);
 }
 
 .text2{
@@ -105,13 +123,26 @@ margin-left: 20px;
   font-size: 20px;
   text-align: right;
   margin-right:20px;
+  border: 3px solid rgb(61, 122, 150);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  margin-left: 300px;
+  color: rgb(80, 183, 252);
+  background: rgb(40, 64, 141);
 }
-
+/*for the sports header in accompllishments*/
 #sportstxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  margin-right:20px;
+  margin-right:px;
+  border: 3px solid rgb(61, 122, 150);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  background:rgb(40, 64, 141);
+  color:rgb(80, 183, 252);
 }
 #shooter{
   margin-left:40px;
@@ -119,19 +150,25 @@ margin-left: 20px;
   margin-right:30px;
   margin-bottom: 30px;
 }
-
+/*uses sportstxt for formatting. Is for the academics header*/
 #academics{
   margin-left:40px;
   margin-top: 35px;
   margin-right:60px;
   margin-bottom: 30px;
 }
-
+/* for outside of school text and image*/
 #OFStxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-right:20px;
+  border: 3px solid rgb(61, 122, 150);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  background:rgb(40, 64, 141);
+  color:rgb(80, 183, 252);
 }
 
 #hoop{ 
@@ -140,31 +177,48 @@ margin-left: 20px;
   margin-right:60px;
   margin-bottom: 30px;
 }
-
+/*text for the assignments page*/
 #assigntxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-right:20px;
+  border: 3px solid rgb(61, 122, 150);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  background:rgb(40, 64, 141);
+  color:rgb(80, 183, 252);
 }
-
+/*title for the assignments*/
 #assignhead{
+  color:#C5C6C7;
   margin-left:30px;
   margin-right:20px;
-  font-size: 30px
+  font-size: 30px;
+  color:#C5C6C7;
 }
-
+u{
+color:#C5C6C7;
+}
+/*list of the assignments with image of folder*/
 li{
   font-size: 20px;
   font-family: 'Roboto', sans-serif !important;
+}
+ol{
+  margin-left:10px;
+  color:rgb(80, 183, 252);
 }
 
 #folder{
   margin-right:70px;
 }
+/*person holding a clock for the man of the hour with image for interests*/
 #clock{
   position: relative; top: -75px;
   margin-left:15px;
+  margin-right:40px;
 }
 
 #interests{
@@ -173,26 +227,70 @@ margin-left:35px;
 position: relative; top: -75px;
 margin-bottom:15px;
 }
-
+/*text for interests heading on the man of the hour page*/
 #intereststxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-right:20px;
   position: relative; top: -75px;
-
+  border: 3px solid rgb(61, 122, 150);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  background:rgb(40, 64, 141);
+  color:rgb(80, 183, 252);
 }
-
+/*heading for the interests paragraph*/
 #intereststitle{
   position: relative; top: -75px;
   margin-left:30px;
   margin-right:20px;
   font-size: 35px
 }
-
+/*text for the personality heading under the man of the hour page*/
 #vibetxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-right:20px;
+  border: 3px solid rgb(61, 122, 150);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    background:rgb(40, 64, 141);
+    color:rgb(80, 183, 252);
 }
+#vibe{
+  margin-left:10px;
+  margin-top: 15px;
+  margin-right:20px;
+  margin-bottom: 30px;
+}
+
+#graph{
+  margin-right:30px;
+  margin-top:20px;
+}
+/*caption for accomplishments shooting gif
+#row {
+  width: 90%;
+  margin: 1em;
+}
+
+#image-and-caption {
+  width: 60%;
+ display: inline-block;
+  /*float: right;
+} */
+/*continued
+#text-block {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1em;
+}
+figcaption{
+  float:right;
+  margin-left:400px;
+}*/

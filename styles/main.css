@@ -9,6 +9,7 @@ border: solid rgb(187, 215, 241);
 border-radius: 5px;
 padding: 7px;
 text-align: center;
+text-decoration: none;
 }
 
 .links{
@@ -30,7 +31,7 @@ body {
 #home-title{text-align: center;
 color:rgb(0, 0, 0);
 font-size: 60px;
-font-family: 'Open Sans', sans-serif;}
+font-family: 'Grandstander', cursive;}
 
 #image{
 margin-top: 35px;
@@ -40,39 +41,41 @@ margin-left: 65px;
 /*strips on the top and bottom of website*/
 .strip {
 background-color:rgb(132, 206, 255);
+width:100%;
 }
 
 /*heading for the accomplishments page*/
 #accomplishments{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Grandstander', cursive;
 }
 /*heading for the assignments page*/
 #assign{text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Grandstander', cursive;
 }
 /*sub headings for each page*/
 .header2{ 
 margin-left: 30px;
 font-size: 35px;
 color: #C5C6C7;
+font-family: 'Roboto', sans-serif;
 }
 /*heading for the man of the hour page*/
 #MOTH { 
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Grandstander', cursive;
 }
 /*heading for the what lies ahead page*/
 #WLA {
   text-align: center;
   color:rgb(0, 0, 0);
   font-size: 60px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Grandstander', cursive;
 }
 /*bubble for the emoji to speak from*/
   .homepagetxt{
@@ -96,6 +99,7 @@ color: #C5C6C7;
     font-size:40px;
 margin-left: 20px;
 color: #C5C6C7;
+font-family: 'Roboto', sans-serif;
 }
 
 .heading2 {
@@ -103,6 +107,7 @@ color: #C5C6C7;
   margin-right: 20px;
   float: right;
   color: #C5C6C7;
+  font-family: 'Roboto', sans-serif;
 }
 /*the text on the index*/
 .text1{
@@ -115,6 +120,7 @@ color: #C5C6C7;
     border-radius: 15px;
     background:rgb(40, 64, 141);
     color:rgb(80, 183, 252);
+    font-weight: bolder;
 }
 
 .text2{
@@ -130,11 +136,13 @@ color: #C5C6C7;
   margin-left: 300px;
   color: rgb(80, 183, 252);
   background: rgb(40, 64, 141);
+  font-weight: bolder;
 }
 /*for the sports header in accompllishments*/
 #sportstxt{
   margin-left:30px;
   font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
   font-size: 20px;
   margin-right:px;
   border: 3px solid rgb(61, 122, 150);
@@ -148,14 +156,13 @@ color: #C5C6C7;
   margin-left:40px;
   margin-top: 25px;
   margin-right:30px;
-  margin-bottom: 30px;
 }
 /*uses sportstxt for formatting. Is for the academics header*/
 #academics{
   margin-left:40px;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-right:60px;
-  margin-bottom: 30px;
+  position: relative; top: -55px;
 }
 /* for outside of school text and image*/
 #OFStxt{
@@ -169,11 +176,12 @@ color: #C5C6C7;
   border-radius: 15px;
   background:rgb(40, 64, 141);
   color:rgb(80, 183, 252);
+  font-weight:bolder;
 }
 
 #hoop{ 
   margin-left:40px;
-  margin-top: 15px;
+
   margin-right:60px;
   margin-bottom: 30px;
 }
@@ -189,6 +197,7 @@ color: #C5C6C7;
   border-radius: 15px;
   background:rgb(40, 64, 141);
   color:rgb(80, 183, 252);
+  font-weight:bolder;
 }
 /*title for the assignments*/
 #assignhead{
@@ -197,6 +206,7 @@ color: #C5C6C7;
   margin-right:20px;
   font-size: 30px;
   color:#C5C6C7;
+  font-family: 'Roboto', sans-serif;
 }
 u{
 color:#C5C6C7;
@@ -261,36 +271,48 @@ margin-bottom:15px;
     background:rgb(40, 64, 141);
     color:rgb(80, 183, 252);
 }
+/*vibe icon for man of the hour*/
 #vibe{
   margin-left:10px;
   margin-top: 15px;
   margin-right:20px;
   margin-bottom: 30px;
 }
-
+/*image of graph for what lies ahead*/
 #graph{
   margin-right:30px;
-  margin-top:20px;
+  margin-top:40px;
 }
-/*caption for accomplishments shooting gif
-#row {
-  width: 90%;
-  margin: 1em;
+/*to make the links on assignments page look nicer*/
+.assignwork {   
+  color: rgb(115, 174, 252);   
 }
 
-#image-and-caption {
-  width: 60%;
- display: inline-block;
-  /*float: right;
-} */
-/*continued
-#text-block {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 1em;
+a:active {
+  color: blue;
 }
-figcaption{
+/*captions!!!!*/
+#caption{
+  margin-left:20px
+}
+#caption4shooter{
   float:right;
-  margin-left:400px;
-}*/
+  margin-right:20px;
+}
+
+#caption4grad{
+float:right;
+margin-right:20px;
+position: relative; top: -150px;
+text-align:right;
+}
+
+#caption4hoop{
+  float:right;
+  position: relative; top: -35px;
+}
+
+#caption4folder{
+  float:right;
+  color:black;
+}

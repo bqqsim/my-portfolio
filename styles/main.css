@@ -250,13 +250,15 @@ margin-bottom:15px;
   border-radius: 15px;
   background:rgb(40, 64, 141);
   color:rgb(80, 183, 252);
+  font-weight:bolder;
 }
 /*heading for the interests paragraph*/
 #intereststitle{
   position: relative; top: -75px;
   margin-left:30px;
   margin-right:20px;
-  font-size: 35px
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
 }
 /*text for the personality heading under the man of the hour page*/
 #vibetxt{
@@ -270,6 +272,7 @@ margin-bottom:15px;
     border-radius: 15px;
     background:rgb(40, 64, 141);
     color:rgb(80, 183, 252);
+    font-weight:bolder;
 }
 /*vibe icon for man of the hour*/
 #vibe{
@@ -315,4 +318,39 @@ text-align:right;
 #caption4folder{
   float:right;
   color:black;
+}
+
+#caption4man{
+  float:right;
+  position: relative; top: -80px;
+  margin-left:700px;
+}
+#caption4interest{
+  float:right;
+  position: relative; top: -170px;
+}
+
+#caption4vibe{
+  float:right;
+  position: relative; top: -130px;
+  margin-right:20px;
+}
+
+#caption4graph{
+  float:right;
+  position: relative; top: -70px;
+  text-align:right;
+  margin-right:30px;
+}
+
+#caption4rocket{
+  float:right;
+  margin-right:50px;
+  position: relative; top: -90px;
+}
+
+#caption4solution{
+  float:right;
+  margin-right:10px;
+  position: relative; top: -35px;
 }

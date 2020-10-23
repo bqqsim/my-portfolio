@@ -10,6 +10,11 @@ border-radius: 5px;
 padding: 7px;
 text-align: center;
 text-decoration: none;
+transition-property: background-color;
+transition-duration: 650ms;
+transition-delay: 50ms;
+/*max-height: 70px;
+transition-property: max-height;*/
 }
 
 .links{
@@ -20,6 +25,7 @@ text-decoration: none;
   color: rgb(219, 48, 25);
   background-color: rgb(218, 218, 218);
   border: solid black; 
+ /* max-height:180px;*/
   }
 /*body*/
 body {
@@ -361,3 +367,47 @@ background-color: darkorange;
 color: deepskyblue;
 border:3px solid red;
 } */
+/*secret page!*/
+.secret-strip{
+  background-color: rgb(255, 115, 59);
+}
+
+#secret-body{
+background-color: rgb(255, 183, 75);
+}
+
+.secret-cool{
+  color: rgb(58, 58, 58); 
+  font-size: 3ems;
+background-color:rgb(255, 255, 255);
+font-family: 'Open Sans', sans-serif;
+font-weight:bold;
+border: solid rgb(247, 226, 135);
+border-radius: 5px;
+padding: 7px;
+text-align: center;
+text-decoration: none;
+transition-property: background-color;
+transition-duration: 650ms;
+transition-delay: 50ms;
+}
+
+.secret-cool:hover{
+  color: rgb(57, 184, 57);
+  background-color: rgb(58, 58, 58);
+  border: solid rgb(255, 255, 255);
+}
+
+#secret-txt{
+  margin-left:30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-right:20px;
+  border: 3px solid rgb(150, 144, 61);
+  display: inline-block;
+  padding: 15px;
+  border-radius: 15px;
+  background:rgb(141, 85, 40);
+  color:rgb(252, 134, 80);
+  font-weight:bolder;
+}

@@ -360,13 +360,20 @@ text-align:right;
   margin-right:10px;
   position: relative; top: -35px;
 }
-/* Buttons
-#button{
-padding:20px;
+/* Buttons*/
+.buttons{
+padding:5px;
 background-color: darkorange;
 color: deepskyblue;
 border:3px solid red;
-} */
+} 
+#button1{
+  margin-left:30px;
+}
+#button2{
+ margin-right: 30px;
+ float: right;
+}
 /*secret page!*/
 .secret-strip{
   background-color: rgb(255, 115, 59);
@@ -399,10 +406,11 @@ transition-delay: 50ms;
 }
 
 #secret-txt{
-  margin-left:30px;
+  margin-left:210px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  margin-right:20px;
+  /*margin-right:20px;*/
+  text-align: center;
   border: 3px solid rgb(150, 144, 61);
   display: inline-block;
   padding: 15px;
@@ -410,4 +418,9 @@ transition-delay: 50ms;
   background:rgb(141, 85, 40);
   color:rgb(252, 134, 80);
   font-weight:bolder;
+}
+
+#demo{
+font-size:35px;
+
 }

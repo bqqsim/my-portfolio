@@ -49,6 +49,9 @@ function button10 () {
 function button11 () {
     alert ('This is kind of disappointing considering how interactive the other buttons were right? Dang :(')
 }
+
+//button 12 functions: Credit: W3 Schools. Functions and variables are set in the HTML. 
+
 /*
 function varDemo(){
 let firstNumber = 9;

@@ -362,17 +362,75 @@ text-align:right;
 }
 /* Buttons*/
 .buttons{
-padding:5px;
-background-color: darkorange;
-color: deepskyblue;
-border:3px solid red;
+padding:10px;
+background-color: rgb(245, 46, 46);
+color: rgb(255, 255, 255);
+border:3px solid rgb(65, 65, 65);
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;
+font-weight: bolder;
+font-size: 30px;
 } 
+.button12{
+  padding:5px;
+background-color: rgb(65, 65, 65);
+color: rgb(255, 255, 255);
+border:3px solid rgb(245, 46, 46);
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;
+font-weight: bolder;
+font-size: 30px;
+float: right;
+margin-right: 30px;
+}
 #button1{
-  margin-left:30px;
+  margin-top: 10px;
+  margin-left:50px;
 }
 #button2{
- margin-right: 30px;
+ margin-right: 50px;
  float: right;
+ margin-top:20px;
+}
+#button3{
+  margin-top: 20px;
+  margin-left:50px;
+}
+#button4{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+#button5{
+  margin-top: 20px;
+  margin-left:50px;
+}
+#button6{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+#button7{
+  margin-top: 20px;
+  margin-left:50px;
+}
+#button8{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+#button9{
+  margin-top: 20px;
+  margin-left:50px;
+}
+#button10{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+#button11{
+  margin-top: 20px;
+  margin-left:50px;
 }
 /*secret page!*/
 .secret-strip{
@@ -422,5 +480,5 @@ transition-delay: 50ms;
 
 #demo{
 font-size:35px;
-
 }
+

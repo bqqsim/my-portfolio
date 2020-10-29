@@ -1,3 +1,5 @@
+// buttons for the secret-page
+
 function button1() {
     let name = prompt ('Hey there! What\'s your name?')
     prompt("What brings you here " + name);
@@ -8,14 +10,14 @@ function button2() {
     let name = prompt("How has your time on this website been?");
     alert("Well that\'s "+ name + ('!'));
 }
-
-function button3() {
-    prompt('Are you just looking through these buttons? Answer with Yes or No!')
-    if ("Yes") {
-    alert ('Oh, That\'s nice. You may continue');}
-    else ("No"); 
+//button 3 was moved to the HTML and has its functions there. Page: secret-page.html
+//function button3() {
+    //prompt('Are you just looking through these buttons? Answer with Yes or No!')
+    //if ("Yes") {
+    //alert ('Oh, That\'s nice. You may continue');}
+    //else ("No"); 
     
-}
+//}
 function button4() {
     location.reload();
 alert ('Boom. Press OK and the large text will disappear!')

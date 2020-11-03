@@ -1,23 +1,27 @@
 // buttons for the secret-page
-
-function button1() {
-    let name = prompt ('Hey there! What\'s your name?')
-    prompt("What brings you here " + name);
-    alert('That\'s cool! Enjoy the rest of your time here!');
+//promts the user for an interger and return whether the number is odd
+//or even
+function OddOrEven() {
+    let userNum = prompt ('Hey there! Enter an integer');
+    if (userNum %2 ==1 ){
+    alert('That number is odd!');
+}
+    else {
+        alert ('That number is even!');
+    }
 }
 
-function button2() {
-    let name = prompt("How has your time on this website been?");
-    alert("Well that\'s "+ name + ('!'));
+function whileSumThrees() {
+    let sum = 0;
+    let i = 0;
+    while (i < 1000) {
+        sum += i;
+        i = i + 3;
+    }
+    console.log(sum) //log to console
 }
 //button 3 was moved to the HTML and has its functions there. Page: secret-page.html
-//function button3() {
-    //prompt('Are you just looking through these buttons? Answer with Yes or No!')
-    //if ("Yes") {
-    //alert ('Oh, That\'s nice. You may continue');}
-    //else ("No"); 
-    
-//}
+
 function button4() {
     location.reload();
 alert ('Boom. Press OK and the large text will disappear!')

@@ -3,11 +3,14 @@
 //or even
 function OddOrEven() {
     let userNum = prompt ('Hey there! Enter an integer');
-    if (userNum %2 ==1 ){
+    if (userNum %2 == 1 ){
     alert('That number is odd!');
 }
+else if(userNum % 2 == 0){
+    alert ('That number is even!');
+}
     else {
-        alert ('That number is even!');
+        alert ('Please enter an integer!');
     }
 }
 
@@ -18,7 +21,7 @@ function whileSumThrees() {
         sum += i;
         i = i + 3;
     }
-    console.log(sum) //log to console
+    console.log(sum) 
 }
 //button 3 was moved to the HTML and has its functions there. Page: secret-page.html
 
@@ -27,14 +30,37 @@ function button4() {
 alert ('Boom. Press OK and the large text will disappear!')
 }
 
-function button5() {
-    prompt ('Aren\'t you getting bored of the same old pop ups?');
-    alert ('Let\'s see what is in the other buttons.')
+function centuryFromYear() {
+    let userYear = prompt ('Want to know what century any year is in? Enter a year!', '2020');
+    let century = 0;
+
+    century = Math.floor(userYear/100+1);
+        if (toString(century)[-1] == 1) /*&& toString(century)[-1] !=11)*/{ 
+           century = toString(century) + 'st'
+        }
+
+    return alert ('The year you entered is in the century of ' + century);
+    
 }
 
-function button6() {
-    alert ('Well, by the looks of it, you are not bored of these yet!')
-}
+function largerNumber() {
+    let num1 = parseInt(prompt ('Insert an integer! :'))
+    let num2 = parseInt(prompt ('Insert another integer to find out which one is larger!'))
+
+    if(num1 > num2){
+        return alert('If I calculated correctly, ' + num1 + ' is larger!');
+    }
+    else if (num2 > num1){
+        return alert('If I calculated correctly, ' + num2 + ' is larger!');
+    }
+    else if(num1 = num2){
+        return alert('If I calculated correctly, it seems as if ' + num1 + ' and ' + num2 + ' are the same!');
+    }
+    else {
+        alert('Please enter 2 integers!');
+    }
+
+};
 
 function button7 () {
     alert ('Soon, these buttons will do more than these lame alerts! Keep checking in from time to time!')

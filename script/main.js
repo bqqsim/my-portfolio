@@ -61,9 +61,15 @@ function largerNumber() {
     }
 
 };
-
-function button7 () {
-    alert ('Soon, these buttons will do more than these lame alerts! Keep checking in from time to time!')
+//3 integers, find th esign when the 3 are multiplied
+function signOfProduct () {
+  let numSign = parseInt (prompt ('Let\'s find the sign of the product! Enter a number', '0'));
+  let numSign2 =  parseInt (prompt ('Enter another number', '0'));
+  let numSign3 =  parseInt (prompt ('Enter one more number', '0'));
+    if (numSign * numSign2 * numSign3 > 0) {
+        return alert('The sign for the product of ' + numSign + ' ,' + numSign2 +' and ' + numSign3 + ' is positive')
+        
+    }
 }
 
 function button8 () {

@@ -3,7 +3,7 @@
 //or even
 function OddOrEven() {
     let userNum = prompt ('Hey there! Enter an integer');
-    if (userNum %2 == 1 ){
+    if (userNum % 2 == 1 ){
     alert('That number is odd!');
 }
 else if(userNum % 2 == 0){
@@ -13,7 +13,7 @@ else if(userNum % 2 == 0){
         alert ('Please enter an integer!');
     }
 }
-
+//uses the while loop to find the sum of the multiples of 3 to a 1000
 function whileSumThrees() {
     let sum = 0;
     let i = 0;
@@ -25,11 +25,12 @@ function whileSumThrees() {
 }
 //button 3 was moved to the HTML and has its functions there. Page: secret-page.html
 
-function button4() {
+//refreshes page to remove the access text from the 'Let's talk' button
+function reFresh() {
     location.reload();
 alert ('Boom. Press OK and the large text will disappear!')
 }
-
+//finds the century the entered year is in
 function centuryFromYear() {
     let userYear = prompt ('Want to know what century any year is in? Enter a year!', '2020');
     let century = 0;
@@ -42,7 +43,7 @@ function centuryFromYear() {
     return alert ('The year you entered is in the century of ' + century);
     
 }
-
+//finds the larger number of the entered integers
 function largerNumber() {
     let num1 = parseInt(prompt ('Insert an integer! :'))
     let num2 = parseInt(prompt ('Insert another integer to find out which one is larger!'))
@@ -53,7 +54,7 @@ function largerNumber() {
     else if (num2 > num1){
         return alert('If I calculated correctly, ' + num2 + ' is larger!');
     }
-    else if(num1 = num2){
+    else if(num1 == num2){
         return alert('If I calculated correctly, it seems as if ' + num1 + ' and ' + num2 + ' are the same!');
     }
     else {
@@ -61,7 +62,7 @@ function largerNumber() {
     }
 
 };
-//3 integers, find th esign when the 3 are multiplied
+//3 integers are entered then, finds the sign when the 3 integers are multiplied
 function signOfProduct () {
   let numSign = parseInt (prompt ('Let\'s find the sign of the product! Enter a number', '0'));
   let numSign2 =  parseInt (prompt ('Enter another number', '0'));
@@ -70,22 +71,89 @@ function signOfProduct () {
         return alert('The sign for the product of ' + numSign + ' ,' + numSign2 +' and ' + numSign3 + ' is positive')
         
     }
+    else if (numSign * numSign2 * numSign3 < 0) {
+        return alert('The sign for the product of ' + numSign + ' ,' + numSign2 +' and ' + numSign3 + ' is negative')
+    }
+    else {
+        return alert ('Please enter 3 integers')
+    }
 }
+//sorts the 3 entered integers from least to greatest
+function threeNumberSort () {
+    
+    let num1 = parseInt (prompt('Let\'s sort some numbers! Enter a number!'));
+    let num2 = parseInt (prompt('Enter another number!'));
+    let num3 = parseInt (prompt ('Enter one last number!'));
 
-function button8 () {
-    alert ('boop. There\'s nothing special here!! Sorry!')
+    if(num1 > num2 > num3){
+    return alert('In order from least to greatest: ' + num3 + ', ' + num2 + ' , and' + num1+ '.')
+    }
+    else if(num1 < num2 < num3){
+
+        return alert('In order from least to greatest: ' + num1 + ', ' + num2 + ' , ' + num3 + '.' )
+    }
+    else if(num1 < num2 > num3 < num1){
+        return alert('In order from least to greatest: ' + num3 + ', ' + num1 + ' , ' + num2 + '.')
+    }
+    else if (num1>num2<num3>num1) {
+        return alert('In order from least to greatest: ' + num2 + ', ' + num1 + ', ' + num3 + '.')
+    }
+   // else if( )
 }
+//uses the for loop to find the sum of the multiples of 3 to a 1000
+function forSumThrees () {
+ let sumOfThrees = 0;
+ 
+ for(let i = 0; i<1000; i = i + 3){
 
-function button9 () {
-    alert ('Yes, nine buttons. There may be less in the final product for this website!')
+    sumOfThrees = sumOfThrees + i;
+
+ }
+ console.log(sumOfThrees);
 }
+//highlights the multiples of 10 or 4 up to 100. Also finds the mmutiples of 4 and 10
+function tenFour() {
+    let i = 0;
+    let sum = 0;
+    let multipleOf4or10 = 0;
 
-function button10 () {
-    alert ('Woah 10 buttons! Still nothing cool though :(')
+     for(i<100; i = i +1; sum = sum + i ){
+        
+         if(i % 4 == 0 && i % 10 == 0){
+
+            multipleOf4or10 += 'TenFour!'
+         }
+         else if(i % 4 == 0){
+             multipleOf4or10 += 'Four!'
+         }
+         else if(i % 10 == 0){
+             multipleOf4or10 += 'Ten!'
+         }
+         else
+         multipleOf4or10 += i;
+     }
+     return alert (multipleOf4or10);
 }
+//finds the missing angle of a triangle
 
-function button11 () {
-    alert ('This is kind of disappointing considering how interactive the other buttons were right? Dang :(')
+function thirdAngle () {
+    
+    let angle1 = parseInt (prompt('Let\'s find the missing angle for a triangle! Enter an angle'));
+    let angle2 = parseInt (prompt('Enter a second angle and I\'ll tell you the missing angle!'));
+
+    let totalAngle = angle1 + angle2;
+
+    if (totalAngle < 180){
+        let missingAngle = 180 - totalAngle;
+
+        return alert ('The missing angle is ' + totalAngle);
+    }
+    else if (totalAngle > 180){
+        return alert('The angles in a triangle add up to 180. The angles you entered are larger than 180!')
+    }
+    else{
+        alert('Please enter valid angles.')
+    }
 }
 
 //button 12 functions: Credit: W3 Schools. Functions and variables are set in the HTML. 

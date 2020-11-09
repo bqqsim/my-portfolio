@@ -81,24 +81,14 @@ function signOfProduct () {
 //sorts the 3 entered integers from least to greatest
 function threeNumberSort () {
     
-    let num1 = parseInt (prompt('Let\'s sort some numbers! Enter a number!'));
+    let num1 = parseInt (prompt ('Let\'s sort some numbers! Enter a number!'));
     let num2 = parseInt (prompt('Enter another number!'));
     let num3 = parseInt (prompt ('Enter one last number!'));
 
-    if(num1 > num2 > num3){
-    return alert('In order from least to greatest: ' + num3 + ', ' + num2 + ' , and' + num1+ '.')
-    }
-    else if(num1 < num2 < num3){
+    let numSort = [num1, num2, num3];
+    numSort.sort(function(a,b){return a-b})
+    return alert('Here are the numbers you entered from least to greatest: ' + numSort);
 
-        return alert('In order from least to greatest: ' + num1 + ', ' + num2 + ' , ' + num3 + '.' )
-    }
-    else if(num1 < num2 > num3 < num1){
-        return alert('In order from least to greatest: ' + num3 + ', ' + num1 + ' , ' + num2 + '.')
-    }
-    else if (num1>num2<num3>num1) {
-        return alert('In order from least to greatest: ' + num2 + ', ' + num1 + ', ' + num3 + '.')
-    }
-   // else if( )
 }
 //uses the for loop to find the sum of the multiples of 3 to a 1000
 function forSumThrees () {
@@ -113,26 +103,24 @@ function forSumThrees () {
 }
 //highlights the multiples of 10 or 4 up to 100. Also finds the mmutiples of 4 and 10
 function tenFour() {
-    let i = 0;
-    let sum = 0;
+    //let sum = 0;
     let multipleOf4or10 = 0;
 
-     for(i<100; i = i +1; sum = sum + i ){
+     for(i = 1; i<101; i = i +1){
         
-         if(i % 4 == 0 && i % 10 == 0){
+         if(i % 4 === 0 && i % 10 === 0){
 
-            multipleOf4or10 += 'TenFour!'
+            multipleOf4or10 += (' TenFour! ');
          }
-         else if(i % 4 == 0){
-             multipleOf4or10 += 'Four!'
+         else if(i % 4 === 0){
+             multipleOf4or10 += (' Four! ');
          }
-         else if(i % 10 == 0){
-             multipleOf4or10 += 'Ten!'
+         else if(i % 10 === 0){
+             multipleOf4or10 += ('Ten!');
          }
-         else
-         multipleOf4or10 += i;
+         else(multipleOf4or10 += ' ' + i + ' ');
      }
-     return alert (multipleOf4or10);
+    alert (multipleOf4or10);
 }
 //finds the missing angle of a triangle
 

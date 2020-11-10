@@ -451,6 +451,11 @@ cursor: pointer;
   margin-top: 20px;
   margin-left:50px;
 }
+#button13{
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
 /*secret page!*/
 .secret-strip{
   background-color: rgb(255, 115, 59);

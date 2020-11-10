@@ -144,11 +144,76 @@ function thirdAngle () {
     }
 }
 
-//button 12 functions: Credit: W3 Schools. Functions and variables are set in the HTML. 
+function encrypt(){
 
-/*
-function varDemo(){
-let firstNumber = 9;
-let secondNumber = 85;
-let answer = firstNumber + secondNumber;
+    let plaintext = prompt('Enter your message and it will be encrypted into a secret message!');
+    let ciphertext = "";
+
+    plaintext = plaintext.split(" ");
+
+    for(let i = 0; i < plaintext.length; i++){
+
+
+        if(plaintext.length >= 3){
+            let thirdletter = plaintext[i][2];
+            let firstletter = plaintext[i][0];
+            let secondletter = plaintext[i][1]
+
+           ciphertext += 'uYgeX' + (plaintext[i]).slice(1) + thirdletter + 'uF' + secondletter + firstletter + "?"
+        }
+        else {
+            let firstletter = plaintext[i][0];
+            let secondletter = plaintext[i][1]
+
+            ciphertext += secondletter + (plaintext[i]).slice(1) + firstletter + 'aYu'
+        }
+    }
+return alert("Your encrypted message is " + ciphertext );
+
+}
+
+function decrypt(){
+
+
+}
+
+/*let plaintext = prompt("Enter your plaintext message:");
+let ciphertext = "";
+let firstletter = "";
+plaintext = plaintext.split(" "); // String is slplit around spaces to create a list of words
+for( let i = 0 ; i < plaintext.length ; i = i + 1 ){
+  if (plaintext[i].length > 2) { 
+    firstletter = plaintext[i][0]; 
+    ciphertext += (plaintext[i]).slice(1,) + firstletter + "ay ";
+  } else {
+    ciphertext += (plaintext[i] + " ")  // Words of length 2 or less are added to the message unaltered
+  }
+  return alert(ciphertext)
 }*/
+
+    /*let plaintext = prompt('Enter your text and it will be encrypted into a secret message!');
+    let ciphertext = ''; 
+    let lastletter = '';
+    plaintext = plaintext.split(' ');
+
+    for(let i = 0; i < plaintext.length; i++){
+        if(plaintext[i].length > 3){
+
+            lastletter = plaintext[i].slice(-1)
+
+
+            ciphertext = ciphertext + (lastletter + plaintext[i].replace('l', '5') + lastletter);
+        }
+        else if(plaintext[i].length <= 3){
+            lastletter = plaintext[i][1]
+            ciphertext += (lastletter + plaintext[i] + lastletter);
+        }
+        else{
+            return alert('Your message couldn\'t be encrypted.');
+
+        }
+
+    };
+    return alert(ciphertext);*/
+
+//button 12 functions: Credit: W3 Schools. Functions and variables are set in the HTML. 

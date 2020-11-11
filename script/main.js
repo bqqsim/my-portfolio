@@ -147,93 +147,60 @@ function thirdAngle () {
 function encrypt(){
 
     let plaintext = prompt('Enter your message and it will be encrypted into a secret message!');
-    let ciphertext = "";
+    let encryptedtxt = "";
 
-    plaintext = plaintext.split(" ");
+    plaintext = plaintext.split(" "); //it is split to create spaces around the list of words
 
     for(let i = 0; i < plaintext.length; i++){
 
 
         if(plaintext[i].length >= 2){
-            let firstletter = plaintext[i][0];
-            let secondletter = plaintext[i][1]
+            let firstletter = plaintext[i][0]; //assign the variable 'firstletter' the value of the first letter of 'plaintext'
+            let secondletter = plaintext[i][1] //assign the variable 'secondletter' the second letter of 'plaintext' 
 
-           ciphertext += 'uYgeX' + (plaintext[i]).slice(1) + 'uF' + secondletter + firstletter + "9" + ' '
+           encryptedtxt += 'uYgeX' + (plaintext[i]).slice(1) + 'uF' + secondletter + firstletter + "9" + ' '
         }
         else {
             let firstletter = plaintext[i][0];
-            ciphertext += (plaintext[i][0]) + 'aYu' + firstletter + ' ';
+            encryptedtxt += (plaintext[i][0]) + 'aYu' + firstletter + ' ';
 
         }
     }
-return alert("Your encrypted message is " + ciphertext );
+return alert("Your encrypted message is " + encryptedtxt );
 
 }
 
 function decrypt(){
-
+//credit: Hanson Li (editing/ extra help)
 //remove the extra strings included in the cipher text
 //add whatever was sliced off(either third,second, or first letter)
 let ciphertext = prompt("Enter your encrypted message and I\'ll decrypt it fot you!")
-let decryptedtext = '';
-let firstDecrypt = '';
-let restOfText = '';
+let decryptedtext = ''; //the actual decrypted text
+let firstDecrypt = ''; //the lastletter of the encrypted text. Will be moved to the front to make it the first letter again. 
+let restOfText = ''; // includes all the text after the first letter 
+
+ciphertext = ciphertext.split(" "); 
 
 for(let i = 0; i < ciphertext.length; i = i + 1){
 
-    ciphertext = ciphertext.replace(/uF/g, '');
-    ciphertext = ciphertext.replace(/uYgeX/g, '');
-    ciphertext = ciphertext.replace(/9/g, ' ');
-    ciphertext = ciphertext.replace(/aYu/g, ''); 
+    ciphertext[i] = ciphertext[i].replace(/uF/g, ""); //replaces the string with an empty string 
+    ciphertext[i] = ciphertext[i].replace(/uYgeX/g, ""); //                || 
+    ciphertext[i] = ciphertext[i].replace(/9/g, ""); //                    || 
+    ciphertext[i] = ciphertext[i].replace(/aYu/g, ""); //                  ||
 
-    if(ciphertext[i].length >= 3){
- firstDecrypt = ciphertext[i].slice(-1);
- restOfText =  ciphertext[i].slice(0, -2);
+    if(ciphertext[i].length > 2){
+ firstDecrypt = ciphertext[i].slice(-1); // fetches the last character of ciphertext and stores it inside 'firstDecrypt'
+ restOfText =  (ciphertext[i]).slice(0, -2); // removes the second letter from the end and includes the rest of ciphertext 
 
-decryptedtext += firstDecrypt + restOfText;
+decryptedtext += firstDecrypt + restOfText + ' ';
     }
-    return alert('Your original message was ' + decryptedtext)
+    else {
+        decryptedtext += ciphertext[i][0] + " "; // takes ciphertext and only includes the first letter. (used for 1 letter words)
+        }
 }
-return alert('Your original message was ' + ciphertext)
+return alert('Your original message was ' +  decryptedtext)
 }
 
-/*let plaintext = prompt("Enter your plaintext message:");
-let ciphertext = "";
-let firstletter = "";
-plaintext = plaintext.split(" "); // String is slplit around spaces to create a list of words
-for( let i = 0 ; i < plaintext.length ; i = i + 1 ){
-  if (plaintext[i].length > 2) { 
-    firstletter = plaintext[i][0]; 
-    ciphertext += (plaintext[i]).slice(1,) + firstletter + "ay ";
-  } else {
-    ciphertext += (plaintext[i] + " ")  // Words of length 2 or less are added to the message unaltered
-  }
-  return alert(ciphertext)
-}*/
 
-    /*let plaintext = prompt('Enter your text and it will be encrypted into a secret message!');
-    let ciphertext = ''; 
-    let lastletter = '';
-    plaintext = plaintext.split(' ');
-
-    for(let i = 0; i < plaintext.length; i++){
-        if(plaintext[i].length > 3){
-
-            lastletter = plaintext[i].slice(-1)
-
-
-            ciphertext = ciphertext + (lastletter + plaintext[i].replace('l', '5') + lastletter);
-        }
-        else if(plaintext[i].length <= 3){
-            lastletter = plaintext[i][1]
-            ciphertext += (lastletter + plaintext[i] + lastletter);
-        }
-        else{
-            return alert('Your message couldn\'t be encrypted.');
-
-        }
-
-    };
-    return alert(ciphertext);*/
 
 //button 12 functions: Credit: W3 Schools. Functions and variables are set in the HTML. 

@@ -154,18 +154,16 @@ function encrypt(){
     for(let i = 0; i < plaintext.length; i++){
 
 
-        if(plaintext.length >= 3){
-            let thirdletter = plaintext[i][2];
+        if(plaintext[i].length >= 2){
             let firstletter = plaintext[i][0];
             let secondletter = plaintext[i][1]
 
-           ciphertext += 'uYgeX' + (plaintext[i]).slice(1) + thirdletter + 'uF' + secondletter + firstletter + "?"
+           ciphertext += 'uYgeX' + (plaintext[i]).slice(1) + 'uF' + secondletter + firstletter + "9" + ' '
         }
         else {
             let firstletter = plaintext[i][0];
-            let secondletter = plaintext[i][1]
+            ciphertext += (plaintext[i][0]) + 'aYu' + firstletter + ' ';
 
-            ciphertext += secondletter + (plaintext[i]).slice(1) + firstletter + 'aYu'
         }
     }
 return alert("Your encrypted message is " + ciphertext );
@@ -174,7 +172,29 @@ return alert("Your encrypted message is " + ciphertext );
 
 function decrypt(){
 
+//remove the extra strings included in the cipher text
+//add whatever was sliced off(either third,second, or first letter)
+let ciphertext = prompt("Enter your encrypted message and I\'ll decrypt it fot you!")
+let decryptedtext = '';
+let firstDecrypt = '';
+let restOfText = '';
 
+for(let i = 0; i < ciphertext.length; i = i + 1){
+
+    ciphertext = ciphertext.replace(/uF/g, '');
+    ciphertext = ciphertext.replace(/uYgeX/g, '');
+    ciphertext = ciphertext.replace(/9/g, ' ');
+    ciphertext = ciphertext.replace(/aYu/g, ''); 
+
+    if(ciphertext[i].length >= 3){
+ firstDecrypt = ciphertext[i].slice(-1);
+ restOfText =  ciphertext[i].slice(0, -2);
+
+decryptedtext += firstDecrypt + restOfText;
+    }
+    return alert('Your original message was ' + decryptedtext)
+}
+return alert('Your original message was ' + ciphertext)
 }
 
 /*let plaintext = prompt("Enter your plaintext message:");
